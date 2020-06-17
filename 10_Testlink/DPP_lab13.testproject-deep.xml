@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="" name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="3" name="Evaluating move" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>The test suite contains test cases for testing evaluating move functionality.</p>
+]]></details> 
+
+<testcase internalid="4" name="Check simple two-letter move">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The test case for check correctness of eveluating simple two-letter move</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add user to the game (&quot;Dodaj uczestnika do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be added and info about him should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make the move by typing in &quot;Wyraz&quot; text-field move &quot;4:5:I;4:6:S&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Check value of the move made in game log section</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Value of the move made should be 2 (I - 1, S - 1)</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="10" name="Check five-letter move">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add user to the game (&quot;Dodaj uczestnika do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be added and info about him should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make the move by typing in &quot;Wyraz&quot; text-field move &quot;1:5:R;2:5:A;3:5:D;4:5:E;5:5:K&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Move should be added to game log</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Value of the move made should be 13</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="16" name="Adding user points" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>The test suite contains test cases for testing adding user points.</p>
+]]></details> 
+
+<testcase internalid="17" name="Check user points after 2 moves">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testing correctness of adding user points in 2 moves.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add user to the game (&quot;Dodaj uczestnika do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be added and info about him should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make the move by typing in &quot;Wyraz&quot; text-field move &quot;4:5:I;4:6:S&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Make another move by typing in &quot;Wyraz&quot; text-field move &quot;6:6:O;5:6:R&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Check user points in &quot;Punktacja&quot; section in the column &quot;Punkty&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Value in column &quot;Punkty&quot; should be 5</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="24" name="Check user points after 4 moves">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testing correctness of adding user points in 4 moves.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add user to the game (&quot;Dodaj uczestnika do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be added and info about him should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make the move by typing in &quot;Wyraz&quot; text-field move &quot;4:5:I;4:6:S&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Make another move by typing in &quot;Wyraz&quot; text-field move &quot;6:6:O;5:6:R&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Make another move by typing in &quot;Wyraz&quot; text-field move &quot;1:5:R;2:5:A;3:5:D;4:5:E;5:5:K&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Make another move by typing in &quot;Wyraz&quot; text-field move &quot;1:1:R;1:2:O&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Move should be added to game log</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Check user points in &quot;Punktacja&quot; section in the column &quot;Punkty&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Value in column &quot;Punkty&quot; should be 21</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="33" name="Adding artificial intelligence" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>The test suite contains test cases for adding artificial intelligence to the game</p>
+]]></details> 
+
+<testcase internalid="34" name="Add at the begin">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testing correctness of adding artificial intelligence at the beggining of the game.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add AI to the game (&quot;Dodaj komputer do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>AI should be added and info about it should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite><testsuite id="38" name="Visibility of letters on the board" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>The test suite contains test cases for testing visibility of letters on the board</p>
+]]></details> 
+
+<testcase internalid="39" name="Check visibility after first move">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Testing correctness of adding letters to the board after first move.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. The user should be connected to the internet.</p>
+
+<p>2. The user should have cloned application from https://git.e-science.pl/rlis241385_dpp/rlis_flaskapi</p>
+
+<p>3. The user should locally run application by typing &quot;flask run&quot; in command line</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Open http://localhost:5000/game/view website</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The website should be opened and the board should be visible</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Add user to the game (&quot;Dodaj uczestnika do gry&quot; button)</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>User should be added and info about him should be visible in the &quot;Punktacja&quot; section</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Make the move by typing in &quot;Wyraz&quot; text-field move &quot;4:5:I;4:6:S&quot; and click Ok</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Letters should be putted on the board this way:</p>
+
+<p>4 row, 5 column - I</p>
+
+<p>4 row, 6 column - S</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite></testsuite>

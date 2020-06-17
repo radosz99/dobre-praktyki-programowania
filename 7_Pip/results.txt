@@ -1,0 +1,34 @@
+----------Wersja v3.0----------
+Nie ma takiej metody jak get_programming_languages
+Nie ma takiej metody jak get_pwr_reseach_centres
+Nie ma takiej metody jak get_laboratories
+ 
+----------UPGRADE-Wersja v4.0----------
+Znaleziono 30 jezykow programowania
+Nie ma takiej metody jak get_pwr_reseach_centres
+Nie ma takiej metody jak get_laboratories
+ 
+----------UPGRADE-Wersja v5.0----------
+Znaleziono 30 jezykow programowania
+Znaleziono 15 centrow badawczych
+Nie ma takiej metody jak get_laboratories
+ 
+----------UPGRADE-Wersja v6.0----------
+Znaleziono 30 jezykow programowania
+Znaleziono 15 centrow badawczych
+Znaleziono 38 laboratoriow
+ 
+----------DOWNGRADE-Wersja v5.0----------
+Znaleziono 30 jezykow programowania
+Znaleziono 15 centrow badawczych
+Nie ma takiej metody jak get_laboratories
+ 
+----------DOWNGRADE-Wersja v4.0----------
+Znaleziono 30 jezykow programowania
+Nie ma takiej metody jak get_pwr_reseach_centres
+Nie ma takiej metody jak get_laboratories
+ 
+----------DOWNGRADE-Wersja v3.0----------
+Nie ma takiej metody jak get_programming_languages
+Nie ma takiej metody jak get_pwr_reseach_centres
+Nie ma takiej metody jak get_laboratories

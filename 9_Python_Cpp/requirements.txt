@@ -1,0 +1,4 @@
+invoke==1.4.1
+pybind11==2.5.0
+PyInstaller==3.6
+python-dev-tools==2020.2.5

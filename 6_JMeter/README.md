@@ -1,0 +1,1 @@
+Gotowe, sprawozdanie w pliku *RealizacjaJMeter.pdf*
