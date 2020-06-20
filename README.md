@@ -276,23 +276,6 @@ Porady:
 	pip install ../freezing/dist/pathology-0.2-py3-none-any.whl 
 
 
-    Wykorzystanie gita jako repozytorium pakietów (proszę dostosować do odpowiedniej gałęzi, może być problem z certyfikatami/kluczami)!!!!):
-
-#git push --set-upstream git@git.e-science.pl:etkubik/package-example.git master (jeśli repozytorium zdalne istnieje)
-
-# gitlab ver.10:     git remote add origin git@git.e-science.pl:etkubik/package-example.git
-
-# (w konsoli jako alternatywa do działania bezpośrednio w pyCharm)
-# cd sciezka_do_projektu 
-source venv/bin/activate
-# (po utworzeniu kodu włączenie wersjonowania: git init, git add, git commit)
-# (wrzucenie projektu na gitlab - wymaga wcześniejszego utworzenia projektu na gitlabie)
-git remote add origin git@git.e-science.pl:etkubik/package-example.git
-git push -u origin --all
-git push -u origin --tags
-# instalacja biblioteki pobranej z gitlaba dla nowego projektu w lokalnym venv
-pip install git+ssh://git@git.e-science.pl/etkubik/package-example.git#egg=package-example
-
     Tutorial m.in. o tym, jak zainstalować własny serwer pypi: http://docs.python-guide.org/en/latest/shipping/packaging/ . Opisano w nim:
 
 a) wykorzystanie SimpleHTTPserver do serwowania pakietów przez umieszczenie ich w katalogach
